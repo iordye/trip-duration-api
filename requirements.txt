@@ -16,3 +16,6 @@ python-multipart==0.0.20
 requests==2.31.0
 tqdm==4.65.0
 great_expectations==1.7.1
+requests==2.31.0
+streamlit==1.30.0
+datetime
