@@ -205,7 +205,34 @@ def predict(data: dict):
 
     Parameters:
     ----------
-    data {dict}: a dictionary containing right features
+    data {dict}: a dictionary containing features in as shown in the example below
+    e.g : {
+  "data": [
+    {
+      "VendorID": 1,
+      "lpep_pickup_datetime": "2021-07-01 00:30:00",
+      "lpep_dropoff_datetime": "2021-07-01 00:35:00",
+      "store_and_fwd_flag": "N",
+      "RatecodeID": 1,
+      "PULocationID": 74,
+      "DOLocationID": 168,
+      "passenger_count": 1,
+      "trip_distance": 1.20,
+      "fare_amount": 6.0,
+      "extra": 0.5,
+      "mta_tax": 0.5,
+      "tip_amount": 0.00,
+      "tolls_amount": 0.0,
+      "ehail_fee": 0.0,
+      "improvement_surcharge": 0.3,
+      "total_amount": 7.30,
+      "payment_type": 2,
+      "trip_type": 1,
+      "congestion_surcharge": 0.0
+    }
+  ]
+}
+
 
     Returns:
     -------
@@ -233,3 +260,4 @@ def predict(data: dict):
 
     # Return prediction
     return {"predicted_trip_duration_minutes": preds.tolist()}
+
